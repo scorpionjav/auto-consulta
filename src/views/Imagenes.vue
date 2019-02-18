@@ -124,8 +124,10 @@
 </template>
 
 <script>
-import TablaBase from '@/components/TablaBase.vue'
-import FormularioModal from '@/components/FormularioModal.vue'
+//import TablaBase from '@/components/TablaBase.vue'
+const TablaBase = () => import('@/components/TablaBase.vue')
+// import FormularioModal from '@/components/FormularioModal.vue'
+const FormularioModal = () => import('@/components/FormularioModal.vue')
 import { mapGetters, mapActions } from 'vuex'
 
 export default {

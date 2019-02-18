@@ -25,7 +25,8 @@
 </template>
 
 <script>
-import Widget from '@/components/Widget.vue'
+//import Widget from '@/components/Widget.vue'
+const Widget = () => import('@/components/Widget.vue')
 
 export default {
     components: {

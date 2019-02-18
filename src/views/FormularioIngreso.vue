@@ -41,7 +41,8 @@
 </template>
 
 <script>
-import FormularioBase from '@/components/FormularioBase.vue'
+//import FormularioBase from '@/components/FormularioBase.vue'
+const FormularioBase = () => import('@/components/FormularioBase.vue')
 
 export default {
     components: {

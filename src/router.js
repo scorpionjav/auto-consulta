@@ -3,36 +3,24 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
-import FormularioIngreso from '@/views/FormularioIngreso.vue'
-import PanelPrincipal from '@/views/PanelPrincipal.vue'
-// General
-import Dashboard from '@/views/Dashboard.vue'
-// Sistema
-import Ticketera from '@/views/Ticketera.vue'
-import Imagenes from '@/views/Imagenes.vue'
-// Configuación
-import CuentasUsuarios from '@/views/CuentasUsuarios.vue'
-
-import Error404 from '@/views/Error404.vue'
-
 const router = new Router({
     mode: 'history',
     routes: [
         {
             path: '/ingreso',
-            component: FormularioIngreso
+            component: () => import('@/views/FormularioIngreso.vue')
         },
         {
             path: '/',
-            component: PanelPrincipal,
+            component: () => import('@/views/PanelPrincipal.vue'),
             children: [
                 {
                     path: '',
-                    component: Dashboard
+                    component: () => import('@/views/Dashboard.vue')
                 },
                 {
                     path: 'ticketera',
-                    component: Ticketera
+                    component: () => import('@/views/Ticketera.vue')
                 },
                 {
                     path: 'campannas',
@@ -44,11 +32,11 @@ const router = new Router({
                 }, ,
                 {
                     path: 'imagenes',
-                    component: Imagenes
+                    component: () => import('@/views/Imagenes.vue')
                 }, ,
                 {
                     path: 'cuentas',
-                    component: CuentasUsuarios
+                    component: () => import('@/views/CuentasUsuarios.vue')
                 }, ,
                 {
                     path: 'parametros',
@@ -58,7 +46,7 @@ const router = new Router({
         },
         {
             path: '*',
-            component: Error404,
+            component: () => import('@/views/Error404.vue'),
         }
     ]
 })

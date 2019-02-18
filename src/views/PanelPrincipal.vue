@@ -9,8 +9,10 @@
 </template>
 
 <script>
-import BarraSuperior from '@/components/BarraSuperior.vue'
-import MenuPrincipal from '@/components/MenuPrincipal.vue'
+// import BarraSuperior from '@/components/BarraSuperior.vue'
+const BarraSuperior = () => import('@/components/BarraSuperior.vue')
+// import MenuPrincipal from '@/components/MenuPrincipal.vue'
+const MenuPrincipal = () => import('@/components/MenuPrincipal.vue')
 
 export default {
     components: {
