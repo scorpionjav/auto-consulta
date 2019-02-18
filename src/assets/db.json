@@ -1,0 +1,369 @@
+{
+    "menu": [
+        {   "id": "01",
+            "title": "SISTEMA",
+            "submenus": [
+                {"id": "11", "name": "Ticketera", "icon": "confirmation_number", "to":"ticketera"},
+                {"id": "12", "name": "Campañas", "icon": "next_week", "to":"campannas"},
+                {"id": "13", "name": "Cobertura", "icon": "signal_cellular_null", "to":"cobertura"},
+                {"id": "14", "name": "Imágenes", "icon": "collections", "to":"imagenes"}
+            ]
+        },
+        {   "id": "02",
+            "title": "CONFIGURACIÓN",
+            "submenus": [
+                {"id": "21", "name": "Cuentas de Usuarios", "icon": "group", "to":"cuentas"},
+                {"id": "22", "name": "Parametros", "icon": "settings", "to":"parametros"}
+            ]
+        }
+    ],
+    "tiposuario": [
+        {
+            "id" : "01",
+            "tipo" : "01",
+            "desc" : "admin",
+            "menu" : [
+                {
+                    "id" : "01",
+                    "submenus" : [
+                        {"id":"11"},
+                        {"id":"12"},
+                        {"id":"13"},
+                        {"id":"14"}
+                    ]
+                },
+                {
+                    "id" : "012",
+                    "submenus" : [
+                        {"id":"21"},
+                        {"id":"22"}
+                    ]
+                }
+            ]
+        },
+        {
+            "id" : "02",
+            "tipo" : "02",
+            "desc" : "basico",
+            "menu" : [
+                {
+                    "id" : "01",
+                    "submenus" : [
+                        {"id":"14"}
+                    ]
+                },
+                {
+                    "id" : "012",
+                    "submenus" : [
+                        {"id":"21"}
+                    ]
+                }
+            ]
+        }
+    ],
+    "usuario": [
+        {
+            "id" : "001",
+            "rut" : "12345678-5",
+            "contrasenna" : "admin",
+            "nombres" : "admin",
+            "apellidos": "admin",
+            "tipo" : "01",
+            "correo" : "admin@email.com"
+        },
+        {
+            "id" : "002",
+            "rut" : "17452432-7",
+            "contrasenna" : "jesus",
+            "nombres" : "Jesús",
+            "apellidos": "Acevedo",
+            "tipo" : "02",
+            "correo" : "jesus@email.com"
+        }
+    ],
+    "perfil": [
+        { "id":"01", "nombre": "Desarrollador"},
+        { "id":"02", "nombre": "Consultor"},
+        { "id":"03", "nombre": "Arquitecto"},
+        { "id":"04", "nombre": "QA"}
+    ],
+    "formulario": [
+        { "id": "01" , "nombre": "Fomulario Escalamiento"},
+        { "id": "02" , "nombre": "Fomulario FUR Ingreso y Consulta"},
+        { "id": "03" , "nombre": "Fomulario Cobertura"},
+        { "id": "04" , "nombre": "Fomulario Solicitudes Internas"},
+        { "id": "05" , "nombre": "Fomulario Consulta y Solicitudes"},
+        { "id": "06" , "nombre": "Fomulario Reclamo"},
+        { "id": "07" , "nombre": "Fomulario Portabilidad"},
+        { "id": "08" , "nombre": "Fomulario Servicio Técnico"}
+    ],
+    "cuentas": [
+        {
+            "id" : "001",
+            "rut" : "17452432-7",
+            "nombres" : "Jesús Alberto",
+            "apellidos": "Sanchez Perez",
+            "perfil" : "01",
+            "correo" : "jesus@email.com",
+            "telefono" : "912345678",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "activo",
+            "formularios" : [
+                {"id" : "01"},
+                {"id" : "02"},
+                {"id" : "03"},
+                {"id" : "04"},
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "07"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "002",
+            "rut" : "9574463-k",
+            "nombres" : "Maria Jose",
+            "apellidos": "Caballero",
+            "perfil" : "02",
+            "correo" : "sonia@email.com",
+            "telefono" : "8879456123",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "activo",
+            "formularios" : [
+                {"id" : "01"},
+                {"id" : "03"},
+                {"id" : "04"},
+                {"id" : "05"}
+            ]
+        },
+        {
+            "id" : "003",
+            "rut" : "20761918-3",
+            "nombres" : "Jose Luis",
+            "apellidos": "Mendoza",
+            "perfil" : "03",
+            "correo" : "jose@email.com",
+            "telefono" : "8879456123",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "activo",
+            "formularios" : [
+                {"id" : "04"},
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "07"}
+            ]
+        },
+        {
+            "id" : "004",
+            "rut" : "17502244-9",
+            "nombres" : "Luisa Maria",
+            "apellidos": "Ramirez Perez",
+            "perfil" : "04",
+            "correo" : "luisa@email.com",
+            "telefono" : "",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "activo",
+            "formularios" : [
+                {"id" : "01"},
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "005",
+            "rut" : "15359840-1",
+            "nombres" : "Francisca",
+            "apellidos": "Mendez",
+            "perfil" : "04",
+            "correo" : "luisa@email.com",
+            "telefono" : "",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "activo",
+            "formularios" : [
+                {"id" : "01"},
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "006",
+            "rut" : "21434550-1",
+            "nombres" : "Veronica",
+            "apellidos": "Iglesias",
+            "perfil" : "01",
+            "correo" : "veronica@email.com",
+            "telefono" : "123456789",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "inactivo",
+            "formularios" : [
+                {"id" : "02"},
+                {"id" : "03"},
+                {"id" : "06"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "007",
+            "rut" : "17317881-6",
+            "nombres" : "Andrea Catalina",
+            "apellidos": "Martin Suarez",
+            "perfil" : "01",
+            "correo" : "andrea@email.com",
+            "telefono" : "123456789",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "inactivo",
+            "formularios" : [
+                {"id" : "02"},
+                {"id" : "03"},
+                {"id" : "06"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "008",
+            "rut" : "22292234-8",
+            "nombres" : "Adriana",
+            "apellidos": "Lozano",
+            "perfil" : "03",
+            "correo" : "andriana@email.com",
+            "telefono" : "961698282",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "inactivo",
+            "formularios" : [
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "07"},
+                {"id" : "08"}
+            ]
+        },
+        {
+            "id" : "009",
+            "rut" : "11157932-6",
+            "nombres" : "Martin",
+            "apellidos": "Pastor",
+            "perfil" : "02",
+            "correo" : "martin@email.com",
+            "telefono" : "961698282",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "inactivo",
+            "formularios" : [
+                {}
+            ]
+        },
+        {
+            "id" : "010",
+            "rut" : "21556154-2",
+            "nombres" : "Miriam",
+            "apellidos": "Santana",
+            "perfil" : "03",
+            "correo" : "miriam@email.com",
+            "telefono" : "961698282",
+            "sucursal" : "S/I",
+            "direccion" : "S/I",
+            "estado" : "inactivo",
+            "formularios" : [
+                {"id" : "01"},
+                {"id" : "02"},
+                {"id" : "03"},
+                {"id" : "04"},
+                {"id" : "05"},
+                {"id" : "06"},
+                {"id" : "07"},
+                {"id" : "08"}
+            ]
+        }
+    ],
+    "imagen": [
+        {
+            "id": "01",
+            "codigo": "img01",
+            "nombre" : "calvo",
+            "nombreArchivo": "lego_calvo",
+            "fecha" : "2018-05-12T06:03:02Z",
+            "imagen": "https://randomuser.me/api/portraits/lego/1.jpg"
+        },
+        {
+            "id": "02",
+            "codigo": "img02",
+            "nombre" : "sombrero",
+            "nombreArchivo": "lego_sombrero",
+            "fecha" : "01/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/2.jpg"
+        },
+        {
+            "id": "03",
+            "codigo": "img03",
+            "nombre" : "lentes",
+            "nombreArchivo": "lego_lentes",
+            "fecha" : "01/02/2018",
+            "imagen": "https://randomuser.me/api/portraits/lego/3.jpg"
+        },
+        {
+            "id": "04",
+            "codigo": "img04",
+            "nombre" : "gorro gris",
+            "nombreArchivo": "lego_gorrogris",
+            "fecha" : "01/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/4.jpg"
+        },
+        {
+            "id": "05",
+            "codigo": "img05",
+            "nombre" : "pelo negro",
+            "nombreArchivo": "lego_pelonegro",
+            "fecha" : "10/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/5.jpg"
+        },
+        {
+            "id": "06",
+            "codigo": "img06",
+            "nombre" : "verde",
+            "nombreArchivo": "lego_verde",
+            "fecha" : "01/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/6.jpg"
+        },
+        {
+            "id": "07",
+            "codigo": "img07",
+            "nombre" : "casco rojo",
+            "nombreArchivo": "lego_cascorojo",
+            "fecha" : "20/03/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/7.jpg"
+        },
+        {
+            "id": "08",
+            "codigo": "img08",
+            "nombre" : "gorro blanco",
+            "nombreArchivo": "lego_gorroblanco",
+            "fecha" : "01/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/8.jpg"
+        },
+        {
+            "id": "09",
+            "codigo": "img09",
+            "nombre" : "mujer",
+            "nombreArchivo": "lego_mujer",
+            "fecha" : "01/02/2019",
+            "imagen": "https://randomuser.me/api/portraits/lego/9.jpg"
+        },
+        {
+            "id": "10",
+            "codigo": "img10",
+            "nombre" : "lentes y sombrero",
+            "nombreArchivo": "lego_lentessombrero",
+            "fecha" : "30/05/2017",
+            "imagen": "https://randomuser.me/api/portraits/lego/0.jpg"
+        }
+    ]
+}

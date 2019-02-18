@@ -27,3 +27,14 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Pruebas Locales
+cd ../..
+cd documents/projects/vuejs/prototype
+npm run serve
+
+json-server --watch db.json
+
+### Axios
+https://github.com/imcvampire/vue-axios
+https://github.com/axios/axios

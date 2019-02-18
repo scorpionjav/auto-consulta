@@ -1,0 +1,456 @@
+{
+  "menu": [
+    {
+      "id": "01",
+      "titulo": "SISTEMA",
+      "submenu": [
+        {
+          "id": "11",
+          "nombre": "Ticketera",
+          "icono": "confirmation_number",
+          "to": "ticketera"
+        },
+        {
+          "id": "12",
+          "nombre": "Campañas",
+          "icono": "next_week",
+          "to": "campannas"
+        },
+        {
+          "id": "13",
+          "nombre": "Cobertura",
+          "icono": "signal_cellular_null",
+          "to": "cobertura"
+        },
+        {
+          "id": "14",
+          "nombre": "Imágenes",
+          "icono": "collections",
+          "to": "imagenes"
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "titulo": "CONFIGURACIÓN",
+      "submenu": [
+        {
+          "id": "21",
+          "nombre": "Cuentas de Usuarios",
+          "icono": "group",
+          "to": "cuentas"
+        },
+        {
+          "id": "22",
+          "nombre": "Parametros",
+          "icono": "settings",
+          "to": "parametros"
+        }
+      ]
+    }
+  ],
+  "menu_rol": [
+    {
+      "id": "01",
+      "desc": "admin",
+      "menu": [
+        {
+          "id": "01",
+          "submenu": [
+            "11",
+            "12",
+            "13",
+            "14"
+          ]
+        },
+        {
+          "id": "02",
+          "submenu": [
+            "21",
+            "22"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "02",
+      "desc": "basico",
+      "menu": [
+        {
+          "id": "01",
+          "submenu": [
+            "11",
+            "14"
+          ]
+        },
+        {
+          "id": "02",
+          "submenu": [
+            "21"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "03",
+      "desc": "imagenes",
+      "menu": [
+        {
+          "id": "01",
+          "submenu": [
+            "14"
+          ]
+        }
+      ]
+    }
+  ],
+  "usuario": [
+    {
+      "id": "001",
+      "rut": "12.345.678-5",
+      "contrasenna": "admin",
+      "nombre": "Jesús",
+      "apellido": "Acevedo",
+      "rol": "02",
+      "correo": "admin@email.com"
+    },
+    {
+      "id": "002",
+      "rut": "17.452.432-7",
+      "contrasenna": "jesus",
+      "nombre": "Pedro",
+      "apellido": "Perez",
+      "rol": "01",
+      "correo": "pedro@email.com"
+    }
+  ],
+  "perfil": [
+    {
+      "id": "01",
+      "nombre": "Desarrollador"
+    },
+    {
+      "id": "02",
+      "nombre": "Consultor"
+    },
+    {
+      "id": "03",
+      "nombre": "Arquitecto"
+    },
+    {
+      "id": "04",
+      "nombre": "QA"
+    }
+  ],
+  "formulario": [
+    {
+      "id": "01",
+      "nombre": "Fomulario Escalamiento"
+    },
+    {
+      "id": "02",
+      "nombre": "Fomulario FUR Ingreso y Consulta"
+    },
+    {
+      "id": "03",
+      "nombre": "Fomulario Cobertura"
+    },
+    {
+      "id": "04",
+      "nombre": "Fomulario Solicitudes Internas"
+    },
+    {
+      "id": "05",
+      "nombre": "Fomulario Consulta y Solicitudes"
+    },
+    {
+      "id": "06",
+      "nombre": "Fomulario Reclamo"
+    },
+    {
+      "id": "07",
+      "nombre": "Fomulario Portabilidad"
+    },
+    {
+      "id": "08",
+      "nombre": "Fomulario Servicio Técnico"
+    }
+  ],
+  "cuenta": [
+    {
+      "rut": "17452432-7",
+      "nombres": "Jesús Alberto",
+      "apellidos": "Sanchez Perez",
+      "perfil": "01",
+      "correo": "jesus@email.com",
+      "telefono": "912345678",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Activa",
+      "formularios": [
+        "01",
+        "03",
+        "05",
+        "07",
+        "08",
+        "06",
+        "04",
+        "02"
+      ],
+      "id": "001"
+    },
+    {
+      "rut": "9574463-k",
+      "nombres": "Maria Jose",
+      "apellidos": "Caballero",
+      "perfil": "02",
+      "correo": "sonia@email.com",
+      "telefono": "8879456123",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Activa",
+      "formularios": [
+        "01",
+        "03",
+        "04",
+        "05"
+      ],
+      "id": "002"
+    },
+    {
+      "rut": "20761918-3",
+      "nombres": "Jose Luis",
+      "apellidos": "Mendoza",
+      "perfil": "03",
+      "correo": "jose@email.com",
+      "telefono": "8879456123",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Activa",
+      "formularios": [
+        "04",
+        "05",
+        "06",
+        "07"
+      ],
+      "id": "003"
+    },
+    {
+      "rut": "17502244-9",
+      "nombres": "Luis Mario",
+      "apellidos": "Ramirez Perez",
+      "perfil": "04",
+      "correo": "luisa@email.com",
+      "telefono": "",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Activa",
+      "formularios": [
+        "01",
+        "05",
+        "06",
+        "08"
+      ],
+      "id": "004"
+    },
+    {
+      "id": "005",
+      "rut": "15359840-1",
+      "nombres": "Francisca",
+      "apellidos": "Mendez",
+      "perfil": "04",
+      "correo": "luisa@email.com",
+      "telefono": "",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Activa",
+      "formularios": [
+        "01",
+        "05",
+        "06",
+        "08"
+      ]
+    },
+    {
+      "rut": "21434550-1",
+      "nombres": "Veronica",
+      "apellidos": "Iglesias",
+      "perfil": "01",
+      "correo": "veronica@email.com",
+      "telefono": "123456789",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Inactiva",
+      "formularios": [
+        "02",
+        "08",
+        "07",
+        "01"
+      ],
+      "id": "006"
+    },
+    {
+      "id": "007",
+      "rut": "17317881-6",
+      "nombres": "Andrea Catalina",
+      "apellidos": "Martin Suarez",
+      "perfil": "01",
+      "correo": "andrea@email.com",
+      "telefono": "123456789",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Inactiva",
+      "formularios": [
+        "02",
+        "03",
+        "06",
+        "08"
+      ]
+    },
+    {
+      "id": "008",
+      "rut": "22292234-8",
+      "nombres": "Adriana",
+      "apellidos": "Lozano",
+      "perfil": "03",
+      "correo": "andriana@email.com",
+      "telefono": "961698282",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Inactiva",
+      "formularios": [
+        "05",
+        "06",
+        "07",
+        "08"
+      ]
+    },
+    {
+      "id": "009",
+      "rut": "11157932-6",
+      "nombres": "Martin",
+      "apellidos": "Pastor",
+      "perfil": "02",
+      "correo": "martin@email.com",
+      "telefono": "961698282",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Inactiva",
+      "formularios": []
+    },
+    {
+      "id": "010",
+      "rut": "21556154-2",
+      "nombres": "Miriam",
+      "apellidos": "Santana",
+      "perfil": "03",
+      "correo": "miriam@email.com",
+      "telefono": "961698282",
+      "autentificacion": "IDM",
+      "sucursal": "S/I",
+      "direccion": "S/I",
+      "estado": "Inactiva",
+      "formularios": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ]
+    }
+  ],
+  "imagen": [
+    {
+      "id": "01",
+      "codigo": "img01",
+      "nombre": "claro sports",
+      "nombreArchivo": "claro_sports.png",
+      "fecha": "01/02/2019",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Claro_Sports_logo.svg/800px-Claro_Sports_logo.svg.png"
+    },
+    {
+      "id": "02",
+      "codigo": "img02",
+      "nombre": "claro",
+      "nombreArchivo": "lego_claro.png",
+      "fecha": "01/02/2019",
+      "imagen": "https://logodownload.org/wp-content/uploads/2014/02/claro-logo-8.png"
+    },
+    {
+      "id": "03",
+      "codigo": "img03",
+      "nombre": "claro musica",
+      "nombreArchivo": "logo_musica.jpg",
+      "fecha": "01/02/2018",
+      "imagen": "https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/062015/1_57.png?itok=ZblXbDTS"
+    },
+    {
+      "id": "04",
+      "codigo": "img04",
+      "nombre": "hogar",
+      "nombreArchivo": "claro_hogar.jpg",
+      "fecha": "01/02/2019",
+      "imagen": "http://logosenvector.com/logo/img/claro-hogar-259.jpg"
+    },
+    {
+      "id": "05",
+      "codigo": "img05",
+      "nombre": "logo tv",
+      "nombreArchivo": "claro_tv.jpg",
+      "fecha": "10/02/2019",
+      "imagen": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDTF5e1qJ1Ke0HY0qPMRJndKfZKjrVdsNMwpYqcvzTaLU_Bp_JRw"
+    },
+    {
+      "id": "06",
+      "codigo": "img06",
+      "nombre": "negro",
+      "nombreArchivo": "logo_negro.jpg",
+      "fecha": "01/02/2019",
+      "imagen": "https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/0017/8601/brand.gif?itok=eJAihir2"
+    },
+    {
+      "id": "07",
+      "codigo": "img07",
+      "nombre": "logo rojo",
+      "nombreArchivo": "logo_2",
+      "fecha": "20/03/2019",
+      "imagen": "http://freevectorlogo.net/wp-content/uploads/2013/01/claro-.ai-logo-vector-200x200.png"
+    },
+    {
+      "id": "08",
+      "codigo": "img08",
+      "nombre": "apps",
+      "nombreArchivo": "claro_apps.jpg",
+      "fecha": "01/02/2019",
+      "imagen": "http://www.asset.media/icons/original/1450830239721-zscblje03w2hjjor-11ae9bfaf9735643981b5cf5818f8e5d/5679e9b23461360006710b00/logonuevo.jpg"
+    },
+    {
+      "id": "09",
+      "codigo": "img09",
+      "nombre": "android",
+      "nombreArchivo": "android.jpg",
+      "fecha": "01/02/2019",
+      "imagen": "http://fielinks.com/sites/default/files/images/unnamed_230.png?66720"
+    },
+    {
+      "id": "10",
+      "codigo": "img10",
+      "nombre": "claro",
+      "nombreArchivo": "claro.jpg",
+      "fecha": "30/05/2017",
+      "imagen": "https://assets.metrolatam.com/pr/2017/04/17/claro-twitter-1200x600.jpg"
+    }
+  ]
+}
