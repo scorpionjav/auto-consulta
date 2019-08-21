@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import '@/plugins/vuetify'
+// import vuetify from '@/plugins/vuetify' // TODO: para Vuetify 2
 import App from '@/App.vue'
 import router from '@/router'
 import store from '@/store'
@@ -22,6 +23,7 @@ router.beforeEach((to, from, next) => {
 })
 
 new Vue({
+  // vuetify, // TODO: para Vuetify 2
   router,
   store,
   render: h => h(App)
